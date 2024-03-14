@@ -47,7 +47,7 @@
         [window_ setOpaque:NO];
         [window_ setIgnoresMouseEvents:YES];
 
-        inputMode_ = HirakanaInputMode;
+        inputMode_ = AsciiInputMode;
         modeIcons_ = 0;
 
         [self prepareLayer];
@@ -81,7 +81,7 @@
     [self updateFrame];
 
     NSImage* image = [modeIcons_ objectForKey:[NSNumber numberWithInt:mode]];
-    NSBitmapImageRep* rep = [NSBitmapImageRep imageRepWithData:[image TIFFRepresentation]]; 
+    NSBitmapImageRep* rep = [NSBitmapImageRep imageRepWithData:[image TIFFRepresentation]];
 
     [self setImage:(id)[rep CGImage]];
 }
@@ -107,7 +107,7 @@
 @end
 
 @implementation InputModeWindow (Local)
-        
+
 - (void)prepareLayer {
     rootLayer_ = [CALayer layer];
     rootLayer_.opacity = 0.0;

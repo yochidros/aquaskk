@@ -116,7 +116,7 @@ namespace {
     if(self) {
         window_ = [InputModeWindow sharedWindow];
         layout_ = layout;
-        [self changeMode:HirakanaInputMode];
+        [self changeMode:AsciiInputMode];
     }
 
     return self;
