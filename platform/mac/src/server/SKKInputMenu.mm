@@ -70,14 +70,14 @@ namespace {
         return table[i];
     }
 
-    static SKKInputMode unifiedInputMode__ = HirakanaInputMode;
+    static SKKInputMode unifiedInputMode__ = AsciiInputMode;
 };
 
 - (id)initWithClient:(id)client {
     if(self = [super init]) {
         client_ = client;
         activation_ = YES;
-        currentInputMode_ = HirakanaInputMode;
+        currentInputMode_ = AsciiInputMode;
     }
 
     return self;
