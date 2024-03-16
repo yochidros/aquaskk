@@ -88,7 +88,7 @@ namespace {
 
     if(identifer) {
         currentInputMode_ = mode;
-        unifiedInputMode__ = mode;
+//        unifiedInputMode__ = mode;
 
         if(activation_) {
             [client_ selectInputMode:identifer];

@@ -16,7 +16,7 @@ XCODE	= xcodebuild -project proj/AquaSKK.xcodeproj
 DEBUG_TARGET	= proj/build/Debug/$(TARGET)
 RELEASE_TARGET	= proj/build/Release/$(TARGET)
 DEBUG_BUILD	= $(XCODE) -configuration Debug
-RELEASE_BUILD	= $(XCODE) -configuration Release $(RELEASE_BUILD_OPTS)
+RELEASE_BUILD	= $(XCODE) -arch arm64 -configuration Release $(RELEASE_BUILD_OPTS)
 HDIMAGE	= hdiutil create -ov -srcfolder $(WORKDIR)
 TODAY	= `date +%Y%m%d`
 

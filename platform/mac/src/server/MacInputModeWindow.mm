@@ -27,6 +27,7 @@
 #include "InputModeWindow.h"
 #include <iostream>
 #include <vector>
+#include <functional>
 
 // MacInputModeWindow::Activate() から呼ばれるユーティリティ群
 namespace {
